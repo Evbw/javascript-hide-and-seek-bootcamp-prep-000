@@ -21,6 +21,9 @@ function deepestChild () {
   while (nextNode) {
     node = nextNode
     nextNode = node.children[0] 
+  }
+  
+  return node
 
     if (Array.isArray(current)) {
       for (let i = 0; i < current.length; i++) {
