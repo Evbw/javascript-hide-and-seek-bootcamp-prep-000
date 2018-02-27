@@ -19,9 +19,8 @@ function deepestChild () {
   let nextNode = node.children[0]
  
   while (nextNode) {
-    if (criteriaFn(node)) {
-      return current
-    }
+    node = nextNode
+    nextNode = node.children[0] 
 
     if (Array.isArray(current)) {
       for (let i = 0; i < current.length; i++) {
