@@ -24,16 +24,4 @@ function deepestChild () {
   }
   
   return node
-
-    if (Array.isArray(current)) {
-      for (let i = 0; i < current.length; i++) {
-        next.push(current[i])
-      }
-    }
-    
-    current = next.shift()
-  }
- 
-  // if we haven't
-  return null
 }
